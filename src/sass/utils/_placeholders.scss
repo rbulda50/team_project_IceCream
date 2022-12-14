@@ -29,7 +29,7 @@
         background-color: $green-bt-cl;
         color: $white-txt-cl;
     }
-    &:focus .button__icon {
+    &:focus .buttons__icon {
         fill: $white-txt-cl;
     }
     &:disabled {
