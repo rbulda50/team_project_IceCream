@@ -1,0 +1,9 @@
+.page{
+    font-family: $main-font;
+    color: $main-txt-cl;
+    font-size: 14px;
+
+    &.modal-open {
+        overflow: hidden;
+    }
+}

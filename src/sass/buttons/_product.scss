@@ -1,0 +1,6 @@
+.product-button {
+    @extend %button;
+    @extend %button--outline;
+    min-width: 134px;
+    min-height: 42px;
+}

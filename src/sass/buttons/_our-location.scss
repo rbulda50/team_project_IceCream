@@ -1,0 +1,6 @@
+.our-location-button {
+    @extend %button;
+    @extend %button--color;
+    min-width: 196px;
+    min-height: 42px;
+}

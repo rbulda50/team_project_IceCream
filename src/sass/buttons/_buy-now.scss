@@ -1,0 +1,6 @@
+.buy-now-button {
+    @extend %button;
+    @extend %button--color;
+    min-width: 152px;
+    min-height: 42px;
+}
