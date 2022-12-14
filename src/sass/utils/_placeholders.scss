@@ -1,0 +1,94 @@
+%button {
+    padding: 0;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18/14);
+    letter-spacing: 0.04em;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+%button--color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: $black-txt-cl;
+    background-color: $yellow-bt-cl;
+    @include transitionRules (background-color);
+    @include transitionRules (color);
+    &:hover {
+        background-color: $green-bt-cl;
+        color: $black-txt-cl;
+    }
+    &:focus {
+        background-color: $green-bt-cl;
+        color: $white-txt-cl;
+    }
+    &:focus .button__icon {
+        fill: $white-txt-cl;
+    }
+    &:disabled {
+        background-color: $grey-bt-cl;
+        color: $black-txt-cl;
+    }
+}
+
+%button--outline {
+    border: 2px solid;
+    border-color: $yellow-bt-cl;
+    color: $black-txt-cl;
+    background-color: transparent;
+    @include transitionRules (border-color);
+    @include transitionRules (color);
+    &:hover {
+        border-color: $green-bt-cl;
+        color: $black-txt-cl;
+    }
+    &:focus {
+        border-color: $green-bt-cl;
+        color: $white-txt-cl;
+    }
+    &:disabled {
+        border-color: $grey-bt-cl;
+        color: $black-txt-cl;
+    }
+}
+
+%button--underline {
+    border: none;
+    text-decoration-line: underline;
+    color: $yellow-bt-cl;
+    background-color: transparent;
+    @include transitionRules (color);
+    &:hover {
+        color: $green-bt-cl;
+    }
+    &:focus {
+        color: $white-txt-cl;
+    }
+    &:disabled {
+        color: $grey-bt-cl;
+    }
+}
+
+%del-margin {
+    margin: 0;
+}
+
+%img-settings{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+%icon {
+    display: inline-block;
+    stroke-width: 0;
+    fill: currentColor;
+}
+

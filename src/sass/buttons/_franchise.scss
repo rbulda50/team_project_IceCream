@@ -1,0 +1,14 @@
+.franchise-button {
+    @extend %button;
+    @extend %button--outline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 196px;
+    min-height: 42px;
+    &:focus .buttons__icon {
+        fill: $white-txt-cl;
+        }
+}

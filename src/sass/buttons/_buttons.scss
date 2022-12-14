@@ -1,0 +1,8 @@
+
+
+.buttons__icon {
+    margin-left: 4px;
+    fill: $black-txt-cl;
+    @include transitionRules (fill);
+}
+

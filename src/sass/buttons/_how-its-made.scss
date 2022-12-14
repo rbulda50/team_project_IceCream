@@ -1,0 +1,6 @@
+.how-its-made-button {
+    @extend %button;
+    @extend %button--underline;
+    min-width: 154px;
+    min-height: 40px;
+} 
