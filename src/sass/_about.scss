@@ -1,10 +1,11 @@
 // COMMON
 .icon {@extend %icon;}
 
-h2,
-p { @extend %del-margin;}
+.about__title,
+.about__label,
+.about__text { @extend %del-margin;}
 
-img { @extend %img-settings;}
+.about__img { @extend %img-settings;}
 
 
 // SECTION ABOUT
