@@ -6,14 +6,9 @@ p { @extend %del-margin;}
 
 img { @extend %img-settings;}
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
 // SECTION ABOUT
-.about {
+.section {
     background-color: $green-bg-cl;
         padding-top: 60px;
         padding-bottom: 50px;
@@ -45,7 +40,7 @@ ul {
 
     color: $white-txt-cl;
 
-    @media screen and (max-width: calc($tablet - 1px)) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
             max-width: 210px;
             margin-left: auto;
             margin-right: auto;
@@ -117,7 +112,7 @@ ul {
     width: 280px;
     height: 280px;
 
- @media screen and (max-width: calc($tablet - 1px)) {
+ @media screen and (max-width: calc(#{$tablet} - 1px)) {
         
         margin-top: 102px;
         margin-bottom: 66px;
@@ -181,7 +176,7 @@ ul {
 
 
 .about__list {
-    @media screen and (max-width: calc($tablet - 1px)) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
         padding-left: 50px;
         padding-right: 50px;
         margin-bottom: 10px;
@@ -199,7 +194,7 @@ ul {
     
 }
 .about__item:last-child {
-    @media screen and (max-width: calc($tablet - 1px)) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
         display: none;
 
     }
@@ -212,7 +207,7 @@ ul {
 }}
 
 .about__item:first-child {
-    @media screen and (max-width: calc($tablet - 1px)) {
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
         margin-bottom: 4px;
         .about__text {
             line-height: calc(21/12);}
