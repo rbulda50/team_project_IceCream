@@ -3,4 +3,9 @@
     @extend %button--color;
     min-width: 164px;
     min-height: 42px;
+
+    @media screen and (min-width:$tablet) {
+        margin-left: 0;
+    }
+
 }
