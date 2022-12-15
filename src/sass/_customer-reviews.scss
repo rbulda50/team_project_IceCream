@@ -1,0 +1,127 @@
+// Slider track
+.slick-track {
+    display: flex;
+}
+// Slider wrapper
+.slick-list {
+    overflow: hidden;
+}
+// Current slider
+.customer-reviews {
+    .slider {
+        text-align: center;
+    }
+}
+.slider {
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+.slick-dots {
+    li {
+        list-style: none;
+    }
+    li+li {
+        margin-left: 18px;
+    }
+    button {
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        background-color: #D9D9D9;
+        border: transparent;
+        border-radius: 50%;
+    }
+}
+// Active button
+.slick-active {
+    button {
+        background-color: #84A178;
+    }
+}
+// Syles section
+.customer-reviews {
+    padding-top: 80px;
+    padding-bottom: 40px;
+        @media screen and (min-width: $tablet) {
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+        @media screen and (min-width: $desktop) {
+            padding-top: 140px;
+            padding-bottom: 100px;
+        }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__photo {
+        display: block;
+        border-radius: 50%;
+        margin-bottom: 32px;
+    }
+    &__wrapper {
+        padding: 35px 39px;
+        margin-bottom: 32px;
+        width: 280px;
+        height: 256px;
+        background-color: $green-bg-cl;
+        border-radius: 10px;
+        @media screen and (min-width: $tablet) {
+            width: 705px;
+            height: 138px;
+            padding: 0 80px;
+            padding-top: 28px;
+            padding-bottom: 29px;
+            border-radius: 24px;
+        }
+        @media screen and (min-width: $desktop) {
+            width: 968px;
+            padding: 43px 109px;
+            border-radius: 24px;
+        }
+    }
+    &__description {
+        margin: 0;
+        font-size: 12px;
+        line-height: 2.58;
+        letter-spacing: 0.04em;
+        color: $white-txt-cl;
+        @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.9;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 16px;
+            line-height: 1.9;
+        }
+    }
+    &__name-city {
+        margin: 0;
+        margin-bottom: 12px;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.9;
+        color: $main-txt-cl;
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 32px;
+
+            font-size: 16px;
+        }
+    }
+}
+
+.page {
+    @media screen and (min-width: $desktop) {
+        padding: 0;
+    }
+}
