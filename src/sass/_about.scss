@@ -125,12 +125,14 @@
  @media screen and (min-width:$tablet) {
         width: 330px;
         height: 330px;
+        margin-right: 38px;
 
  }
 
  @media screen and (min-width:$desktop) {
         width: 490px;
         height: 490px;
+        margin-right: 109px;
 
  }}
 
@@ -264,11 +266,10 @@
 
     @media screen and (min-width:$desktop) {
         display: flex;
-        justify-content: space-between;
         margin-top: 82px;
 
         .about__text-button {
-                width: 490px; /*need to think and check text-size*/
+                width: 463px; /*need to think and check text-size*/
             }
 
     }
@@ -276,11 +277,14 @@
 
 .about__text-button {
     @media screen and (min-width:$tablet) {
-        padding-top: 8px; 
-        
+        padding-top: 8px;
+        margin-right: 2px;
+                
     }
     @media screen and (min-width:$desktop) {
-        padding-top: 90px; 
+        padding-top: 90px;
+        margin-right: 109px; 
         
     }
 }
+
