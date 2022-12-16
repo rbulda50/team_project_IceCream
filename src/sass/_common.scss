@@ -3,3 +3,46 @@
 html {
     scroll-behavior: smooth;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-body);
+}
+
+.list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
