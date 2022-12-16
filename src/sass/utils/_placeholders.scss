@@ -76,6 +76,25 @@
     }
 }
 
+%close-button {
+    display: block;
+    position: absolute;
+    
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+%close__icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 %del-margin {
     margin: 0;
 }
