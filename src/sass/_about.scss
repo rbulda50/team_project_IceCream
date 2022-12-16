@@ -106,7 +106,6 @@
     position: relative;
     background-color: $yellow-bg-cl;
     border-radius: 50%;
-    z-index: 10;
     width: 280px;
     height: 280px;
 
@@ -143,8 +142,6 @@
     overflow: hidden;
     object-fit: contain;
     object-position: center;
-    z-index: 20;
-
   
     @media screen and (min-width:$tablet) {       
         top: 26px;
