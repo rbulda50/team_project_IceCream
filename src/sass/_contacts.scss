@@ -42,7 +42,7 @@ img {
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 24px;
+  padding-bottom: 3px;
 
   background: $white-txt-cl;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -100,7 +100,8 @@ img {
 
 }
 
-.contacts__address::after {
+.contacts__address::after,
+.contacts__schedule-list::after {
   content: "";
   position: absolute;
   display: block;
@@ -119,16 +120,20 @@ img {
   height: 96px;
 }
 
-.contacts__schedule-item {
-  margin-bottom: 8px;
+.contacts__schedule-list {
+  margin-bottom: 24px;
+}
+
+.contacts__schedule-item:not(:last-child) {
+  padding-bottom: 8px;
 }
 
 .contacts__schedule-day {
 font-weight: 500;
 font-size: 12px;
-line-height: 1.83%;
+line-height: 1.83;
 
-width: 98px;
+min-width: 98px;
 height: 22px;
 
 
@@ -136,14 +141,51 @@ height: 22px;
 color: $main-txt-cl;
 }
 
-.contacts__schedule-hour {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
+.contacts__hour {
+min-width: 124px;
+height: 22px;
 
-  // min-width: 124px;
-  // height: 22px;
-
-  color: $grey-txt-cl;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.83;
+color: $grey-bt-cl;
 }
+
+.contacts__info {
+// padding-top: 24px;
+padding-bottom: 3px;
+
+
+font-weight: 500;
+font-size: 12px;
+line-height: 1.58;
+
+color: $main-txt-cl;
+}
+
+.contacts__info-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.contacts__info-item:not(:last-child) {
+  margin-bottom: 6px;
+  // width: 111px;
+  // height: 19px;
+}
+
+.contacts__tel,
+.contacts__mail {
+
+font-weight: 500;
+font-size: 12px;
+line-height: 1.58;
+
+color: $main-txt-cl;
+text-decoration: none;
+}
+
+
+
 
