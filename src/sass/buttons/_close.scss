@@ -8,27 +8,17 @@
 //  </button>
 
 .close-button--black {
-    display: block;
-    position: absolute;
+    @extend %close-button;
     top: 12px;
     right: 12px;
 
     width: 24px;
     height: 24px;
-    border: none;
-    background-color: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-
+   
 }
 
 .close__icon--black {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    @extend %close__icon;
     width: 13px;
     height: 13px;
     fill: $main-txt-cl;
@@ -36,26 +26,16 @@
 }
 
 .close-button--white {
-    display: block;
-    position: absolute;
+    @extend %close-button;
     top: 32px;
     right: 32px;
     width: 32px;
     height: 32px;
-    border: none;
-    background-color: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-
+   
 }
 
 .close__icon--white {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    @extend %close__icon;
     width: 19px;
     height: 19px;
     fill: $white-txt-cl;
