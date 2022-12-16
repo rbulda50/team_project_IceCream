@@ -48,7 +48,10 @@
             color: $main-txt-cl;
         }
     }
-
+        .about__iframe {
+            width: 100%;
+            height: auto;
+        }
     @media screen and (min-width:$mobile) {
         .about__modal-made {
                 position: absolute;
