@@ -1,0 +1,91 @@
+<div class="backdrop">
+    <div class="modal-product">
+        <button class="close-button--black" type="button" data-modal-close>
+            <svg class="close__icon--black ">
+                 <use href="./images/icons.svg#close"></use>
+             </svg>
+          </button>
+
+          <h2 class="modal-product__title">Chololate icecream</h2>
+
+          <div class="modal-product__photo-container">
+            <picture class="modal-product__photo">
+                <img src="./images/products.-modal-windows/chololate@1x.png" alt="icecream">
+              </picture>
+          </div>
+
+        
+          <ul class="callories">
+            <li class="callories__item">
+              <div class="round"><p class="round__text">330</p></div>
+              <p class="round__content">kcal</p>
+            </li>
+            <li class="callories__item">
+              <div class="round"><p class="round__text">5g</p></div>
+              <p class="round__content">Protein</p>
+            </li>
+            <li class="callories__item">
+              <div class="round"><p class="round__text">9,2g</p></div>
+              <p class="round__content">Fats</p>
+            </li>
+            <li class="callories__item">
+              <div class="round"><p class="round__text">45,4g</p></div>
+              <p class="round__content">Carbs</p>
+            </li>
+          </ul>
+
+          <h3 class="modal-product__ingredients">Ingredients</h3>
+          <ul class="ingredients">
+            <li class="ingredients__item">
+                <p>Milk</p>
+                <p>100ml</p>
+            </li>
+            <li class="ingredients__item">
+                <p>Belgian chocolate</p>
+                <p>20g</p>
+            </li>
+            <li class="ingredients__item">
+                <p>Cream</p>
+                <p>150 ml</p>
+            </li>
+            <li class="ingredients__item">
+                <p>Cocoa powder</p>
+                <p>30g</p>
+            </li>
+            <li class="ingredients__item">
+                <p>Sugar</p>
+                <p>40g</p>
+            </li>
+            <li class="ingredients__item">
+                <p>Vanilla sugar</p>
+                <p>10g</p>
+            </li>
+          </ul>
+
+          <form class="form form-ingr">
+            <input
+              class="form__input"
+              type="text"
+              name="username"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="form__input"
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              required
+            />
+            <textarea
+            class="form__input form__input--multiline"
+            name="comment"
+            placeholder="Comment"
+            ></textarea>
+        </form>
+
+          <button type="submit" class="modal-product__button-send">
+            Submit
+          </button>
+    </div>
+</div>
