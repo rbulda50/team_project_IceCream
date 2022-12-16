@@ -1,8 +1,7 @@
-@import './common';
 @import './utils/vars';
+@import './common';
 @import './page';
 @import './container';
-@import './section';
 @import './utils/list';
 @import './utils/mixins';
 @import './utils/placeholders';
@@ -12,6 +11,7 @@
 @import './buttons/buttons';
 @import './buttons/read-more';
 @import './buttons/buy-now';
+@import './buttons/close';
 @import './buttons/our-location';
 @import './buttons/product';
 @import './buttons/franchise';
