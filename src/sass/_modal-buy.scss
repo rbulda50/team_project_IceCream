@@ -1,0 +1,201 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+
+    .modal-buy {
+        width: 280px;
+        height: fit-content;
+        padding: 28px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 2px solid #F8D24E;
+        max-height: 90%;
+        overflow-y: scroll;
+      
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (min-width:768px) {
+        width: 568px;
+          
+          padding: 32px 54px;
+          }
+
+
+          &__title {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: calc(24 / 16);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #131313;
+    
+            margin-bottom: 20px;
+    
+            @media screen and (min-width:768px) {
+                margin-bottom: 40px;
+            }
+    
+        }
+
+        &__photo-container {
+            position: relative;
+            }
+
+        &__photo-container::after {
+            content: "";
+            position: absolute;
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            top: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            }
+
+            &__button-send{
+                min-width: 132px;
+                padding: 12px 34px;
+                margin: 0 auto;
+                
+            
+                border: none;
+            
+                background: $yellow-bt-cl;
+                border-radius: 10px;
+            
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.21;
+                display: block;
+                align-items: center;
+                text-align: center;
+            
+            color: #131313;
+              }
+    }    
+
+    
+
+    .ice-cream-types {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        padding: 0px;
+
+        @media screen and (min-width:768px) {
+        flex-direction: row;
+        gap: 32px;
+        }
+
+    }
+       
+    .ice-cream-types__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+ }
+      
+      .ice-cream__round {
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        position: absolute;
+        top: 60px;
+        width: 132px;
+        height: 136px;
+        border-radius: 15px;
+        z-index: -1;
+        border: 2px solid #96AF8C;
+        box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+        // &:first-of-type {
+        // border: 2px solid #96AF8C;
+        // box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        // }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    max-width: 368px;
+  
+    &__input {
+        padding: 11px 8px;
+        margin-bottom: 12px;
+        height: 32px;
+      
+        font-size: 12px;
+        line-height: 1.4;
+        
+      
+        background-color: rgba(248, 210, 78, 0.1);
+        border-width: 1px;
+        border-style: solid;
+        
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+      }
+
+      &__input::placeholder {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;   
+        color: #131313;
+      }
+
+      &__input--multiline {
+    
+        height: 64px;
+        resize: none;
+      
+      }
+   
+  }
+  
+  
+
+  
+  
+  
+  
+
+
+
+  
