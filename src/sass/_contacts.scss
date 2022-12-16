@@ -115,6 +115,8 @@ img {
 .contacts__schedule {
   margin-top: 48px;
   margin-bottom: 24px;
+  width: 124px;
+  height: 96px;
 }
 
 .contacts__schedule-item {
@@ -128,8 +130,8 @@ line-height: 1.83%;
 
 width: 98px;
 height: 22px;
-text-align: center;
-align-items: center;
+
+
 
 color: $main-txt-cl;
 }
@@ -138,6 +140,9 @@ color: $main-txt-cl;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
+
+  // min-width: 124px;
+  // height: 22px;
 
   color: $grey-txt-cl;
 }
