@@ -1,5 +1,6 @@
 
 .advantages {
+    margin: 0;
     padding-bottom: 64px;
     padding-top: 0;
     background-color: #84A178;
@@ -43,14 +44,13 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        
-        @media screen and (max-width: 767px) {
-            &__item:not(:last-child){
-                margin-bottom: 28px;
-            }
-        }
        
+    }
+
+    @media screen and (max-width: 767px) {
+        &__item:not(:last-child){
+            margin-bottom: 28px;
+        }
     }
 
     &__numbers {
@@ -58,7 +58,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.22px;
+        line-height: 1.22;
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
@@ -108,17 +108,17 @@
 .advantages__container{
     
         @media screen and (min-width: 480px) {
-          width: 480px;
+            width: 480px;
         }
         @media screen and (min-width: 768px) {
-          width: 768px;
-          padding-right: 34px;
-          padding-left: 34px;
+            width: 768px;
+            padding-right: 34px;
+            padding-left: 34px;
         }
-        @media screen and (min-width: 1280px) {
-          width: 1280px;
-          padding-right: 115px;
-          padding-left: 115px;
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            padding-right: 15px;
+            padding-left: 15px;
         }
 }
 
@@ -141,6 +141,7 @@
     height: 50px;
     color: #131313;
     margin-bottom: 16px;
+    margin-top: 0;
 
     @media screen and(min-width: 768px) {
         margin-bottom: 32px;
@@ -169,6 +170,7 @@
     height: 50px;
     color: #131313;
     margin-bottom: 16px;
+    margin-top: 0;
    
 
     @media screen and(min-width: 768px) {
@@ -179,18 +181,6 @@
     }
 }
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
 
 .advantages__item:nth-child(3n)::before {
     content: ' ';
@@ -211,6 +201,7 @@
     color: #131313;
     border-radius: 25px;
     margin-bottom: 16px;
+    margin-top: 0;
     
 
     @media screen and(min-width: 768px) {
