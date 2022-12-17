@@ -1,28 +1,25 @@
 // COMMON
-.icon {@extend %icon;}
 
 .about__title,
 .about__label,
 .about__text { @extend %del-margin;}
 
-.about__img { @extend %img-settings;}
-
 
 // SECTION ABOUT
-.section {
+.about {
     background-color: $green-bg-cl;
         padding-top: 60px;
         padding-bottom: 50px;
 
     @media screen and (min-width:$tablet) {
         padding-top: 60px;
-        padding-bottom: 86px; /*need to check*/
+        padding-bottom: 80px; 
     
         }
     
     @media screen and (min-width:$desktop) {
         padding-top: 60px;
-        padding-bottom: 138px;/*need to check*/
+        padding-bottom: 100px;
     }
 }
 
@@ -42,7 +39,7 @@
     color: $white-txt-cl;
 
     @media screen and (max-width: calc(#{$tablet} - 1px)) {
-            max-width: 210px;
+            max-width: 210px; /*NEED OTHER IDEA ??????? */
             margin-left: auto;
             margin-right: auto;
         }
@@ -85,9 +82,9 @@
 
 }
 
-// ANIMATION
+// ANIMATION FOR TITLE
 .about__title {
-    animation: slide-in-elliptic-top-fwd 1000ms cubic-bezier(0.4, 0, 0.2, 1) 1000ms both;
+    animation: slide-in-elliptic-top-fwd 1000ms cubic-bezier(0.4, 0, 0.2, 1) 500ms both;
 }
 
 @keyframes slide-in-elliptic-top-fwd {
@@ -109,14 +106,13 @@
     position: relative;
     background-color: $yellow-bg-cl;
     border-radius: 50%;
-    z-index: 10;
     width: 280px;
     height: 280px;
 
  @media screen and (max-width: calc(#{$tablet} - 1px)) {
         
-        margin-top: 102px;
-        margin-bottom: 66px;
+        margin-top: 32px;
+        margin-bottom: 62px;
         margin-left: auto;
         margin-right: auto;
     
@@ -125,12 +121,14 @@
  @media screen and (min-width:$tablet) {
         width: 330px;
         height: 330px;
+        margin-right: 38px;
 
  }
 
  @media screen and (min-width:$desktop) {
         width: 490px;
         height: 490px;
+        margin-right: 109px;
 
  }}
 
@@ -144,8 +142,6 @@
     overflow: hidden;
     object-fit: contain;
     object-position: center;
-    z-index: 20;
-
   
     @media screen and (min-width:$tablet) {       
         top: 26px;
@@ -155,7 +151,7 @@
     }
     
     @media screen and (min-width:$desktop) {
-        top: 39px;
+        top: 40px;
         width: 490px;
         height: 490px;
         
@@ -167,7 +163,7 @@
     width: 100%;
     height: 100%;
 
-// ANIMATION
+// ANIMATION FOR IMG
     @include transitionRules (transform);
 
     .about__photo:hover & {
@@ -258,17 +254,16 @@
         margin-top: 72px;
 
         .about__text-button {
-            width: 330px; /*need to think and check text-size*/
+            width: 334px; 
         }
     }
 
     @media screen and (min-width:$desktop) {
         display: flex;
-        justify-content: space-between;
         margin-top: 82px;
 
         .about__text-button {
-                width: 490px; /*need to think and check text-size*/
+                width: 463px; 
             }
 
     }
@@ -276,11 +271,14 @@
 
 .about__text-button {
     @media screen and (min-width:$tablet) {
-        padding-top: 8px; 
-        
+        padding-top: 8px;
+        margin-right: 2px;
+                
     }
     @media screen and (min-width:$desktop) {
-        padding-top: 90px; 
+        padding-top: 90px;
+        margin-right: 109px; 
         
     }
 }
+

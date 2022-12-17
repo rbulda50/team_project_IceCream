@@ -1,0 +1,43 @@
+// CLOSE BUTTON AND ICON
+
+// code for HTML
+//  <button class="close-button--black" type="button" data-modal-close>
+//     <svg class="close__icon--black ">
+//         <use href="./images/icons.svg#close"></use>
+//     </svg>
+//  </button>
+
+.close-button--black {
+    @extend %close-button;
+    top: 12px;
+    right: 12px;
+
+    width: 24px;
+    height: 24px;
+   
+}
+
+.close__icon--black {
+    @extend %close__icon;
+    width: 13px;
+    height: 13px;
+    fill: $main-txt-cl;
+
+}
+
+.close-button--white {
+    @extend %close-button;
+    top: 32px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+   
+}
+
+.close__icon--white {
+    @extend %close__icon;
+    width: 19px;
+    height: 19px;
+    fill: $white-txt-cl;
+
+}

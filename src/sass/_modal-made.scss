@@ -1,0 +1,114 @@
+
+
+
+    @media screen and (min-width:320px) {
+        .about__modal-made {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+            position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 280px;
+        height: 459px;
+        padding: 28px;}
+
+        .about__icon {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                
+            }
+        
+        .about__title {
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: calc(24/16);
+                color: $main-txt-cl;
+            }
+
+        .about__video {
+            width: 224px;
+            height: 199px;
+    
+    
+            background: #131313;
+            border-radius: 10px;
+        }
+        .about__text {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+    
+            color: $main-txt-cl;
+        }
+    }
+        .about__iframe {
+            width: 100%;
+            height: auto;
+        }
+    @media screen and (min-width:$mobile) {
+        .about__modal-made {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+        
+                width: 280px;
+                height: 459px;
+                padding: 28px;
+            }
+        
+
+        .about__icon {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        
+        .about__title {
+                font-family: $secondary-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: calc(24/16);
+                color: $main-txt-cl;
+            }
+        .about__video {
+                    width: 224px;
+                    height: 199px;
+        
+        
+                    background: #131313;
+                    border-radius: 10px;
+                }
+        .about__text {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+    
+            color: $main-txt-cl;
+        }
+    }
+
+
+    @media screen and (min-width:$tablet) {
+        
+    }
+
+    @media screen and (min-width:$desktop) {
+        
+
+        
+    }
+
+
+
