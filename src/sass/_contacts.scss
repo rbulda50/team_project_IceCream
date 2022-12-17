@@ -152,6 +152,12 @@ img {
   margin-bottom: 24px;
   width: 124px;
   height: 96px;
+  @media screen and (min-width: 768px){
+
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
 }
 
 .contacts__schedule-list {
