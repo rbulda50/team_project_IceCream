@@ -65,7 +65,7 @@ margin-bottom: 28px;
 }
 .hero__title--box {
     width: 247px;
-    margin-left: 20px;
+    
     @media screen and (min-width:1200px) {
         width: 367px;
     }
@@ -74,7 +74,9 @@ margin-bottom: 28px;
 .hero__list {
     display: flex;
     gap: 12px;
+
 }
+
 .hero__list--products {
     font-family: 'Montserrat';
 font-style: normal;
@@ -246,10 +248,15 @@ right: 100px;
 .hero-image--plate {
     @media screen and (max-width:767.8px) 
     {display: none;} 
+    
     @media screen and (min-width:768px) {
         position: absolute;
+        bottom: +12px;
+    }
+    @media screen and (min-width:1200px) {
+        position: absolute;
         bottom: +65px;
-       
+       left: +16px;
     }
 
     
