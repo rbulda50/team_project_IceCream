@@ -183,3 +183,16 @@ right: 226px;
 }
 
 }
+.hero-image--plate {
+    display: none;
+    @media screen and (min-width:768px) {
+        position: absolute;
+    }
+
+    
+}
+.hero-image--dots {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
