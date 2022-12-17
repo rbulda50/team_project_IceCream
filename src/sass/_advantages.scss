@@ -1,10 +1,10 @@
 
 .advantages {
     padding-bottom: 64px;
+    padding-top: 0;
     background-color: #84A178;
 
     @media screen and(min-width: 768px) {
-        padding-top: 0;
         padding-bottom: 204px;
     }
     @media screen and(min-width: 1200px) {
@@ -12,6 +12,8 @@
     }
 
     &__list {
+        
+
         @media screen and(min-width: 768px) {
             padding-left: 0;
             display: flex;
@@ -25,6 +27,7 @@
             justify-content: space-around;
             gap: 32px;
         }
+
     }
 
     &__item {
@@ -40,6 +43,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        
+        @media screen and (max-width: 767px) {
+            &__item:not(:last-child){
+                margin-bottom: 28px;
+            }
+        }
+       
     }
 
     &__numbers {
@@ -53,7 +64,7 @@
         text-transform: uppercase;
         color: #FCFCFC;
         margin-bottom: 16px;
-        margin-top: 16px;
+        
 
         @media screen and(min-width: 768px) {
             text-transform: none;
@@ -94,19 +105,42 @@
     }
 }
 
+.advantages__container{
+    
+        @media screen and (min-width: 480px) {
+          width: 480px;
+        }
+        @media screen and (min-width: 768px) {
+          width: 768px;
+          padding-right: 34px;
+          padding-left: 34px;
+        }
+        @media screen and (min-width: 1280px) {
+          width: 1280px;
+          padding-right: 115px;
+          padding-left: 115px;
+        }
+}
+
 .advantages__item:first-child::before {
     content: ' ';
     margin-left: auto;
     margin-right: auto;
     display: block;
     background-image: url('../images/advantages/cow@1x.png'), linear-gradient(#F8D24E, #F8D24E);
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/advantages/cow@2x.png"), linear-gradient(#F8D24E, #F8D24E);;   
+    }
+    
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     border-radius: 25px;
     width: 50px;
     height: 50px;
     color: #131313;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 
     @media screen and(min-width: 768px) {
         margin-bottom: 32px;
@@ -122,14 +156,20 @@
     margin-right: auto;
     display: block;
     background-image: url('../images/advantages/weight@1x.png'), linear-gradient(#F8D24E, #F8D24E);
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/advantages/weight@2x.png"), linear-gradient(#F8D24E, #F8D24E);;   
+    }
+    
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
     border-radius: 25px;
     width: 50px;
     height: 50px;
     color: #131313;
-    margin-bottom: 25px;
-    margin-top: 28px;
+    margin-bottom: 16px;
+   
 
     @media screen and(min-width: 768px) {
         margin-bottom: 36px;
@@ -139,10 +179,17 @@
     }
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .advantages__item:nth-child(3n)::before {
@@ -151,14 +198,20 @@
     margin-right: auto;
     display: block;
     background-image: url('../images/advantages/ice-crema@1x.png'), linear-gradient(#F8D24E, #F8D24E);
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url("../images/advantages/ice-crema@2x.png"), linear-gradient(#F8D24E, #F8D24E);;   
+    }
+    
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     width: 50px;
     height: 50px;
     color: #131313;
     border-radius: 25px;
-    margin-bottom: 25px;
-    margin-top: 16px;
+    margin-bottom: 16px;
+    
 
     @media screen and(min-width: 768px) {
         margin-bottom: 36px;
