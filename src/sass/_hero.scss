@@ -3,6 +3,14 @@ background-color: #84A178;
 border: none;
 outline: none;
 }
+
+.hero__item {
+    text-decoration: none;
+}
+.hero__list {
+    display: flex;
+
+}
 .hero__title {
     margin: 0;
     padding-top: 50px;
@@ -71,11 +79,7 @@ margin-bottom: 28px;
     }
 
 }
-.hero__list {
-    display: flex;
-    gap: 12px;
 
-}
 
 .hero__list--products {
     font-family: 'Montserrat';
@@ -86,11 +90,39 @@ line-height: 15px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #000000;
+
 border: 2px solid #F8D24E;
-border-radius: 8px;
+border-radius: 10px;
+@media screen and (min-width:1200px) {
+    font-size: 14px;
+line-height: 18px;
 }
+}
+
+
+.hero__list--products:hover {
+    border: 2px solid #0A8817;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hero__list--products:focus {
+    @media screen and (min-width:1200px) {
+        border: 2px solid #0A8817;
+        border-radius: 10px; 
+        cursor: pointer;
+    }
+    
+}
+.hero__list--products:disabled {
+    @media screen and (min-width:1200px) {
+        border: 2px solid #ABABAB;
+        border-radius: 10px; 
+        cursor: pointer;
+    }
+    
+}
+
 .hero__list--howmade {
     font-family: 'Montserrat';
 font-style: normal;
@@ -101,18 +133,39 @@ display: flex;
 align-items: center;
 text-align: center;
 text-decoration-line: underline;
-
+margin-left: 12px;
 color: #F8D24E;
 
 @media screen and (min-width:1200px) {
     margin-left: 34px;
+    font-size: 14px;
+    line-height: 17px;
 }
+}
+.hero__list--howmade:hover {
+    color: #0A8817;
+    cursor: pointer;
+}
+
+.hero__list--howmade:focus {
+    color: #FCFCFC;
+    cursor: pointer;
+}
+.hero__list--howmade:disabled {
+    color: #ABABAB;
+    cursor: pointer;
 }
 .hero__product--text {
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 26px;
     padding-right: 26px;
+}
+.hero__product--text:focus {
+    @media screen and (min-width:1200px) {
+        color: #FCFCFC;  
+    }
+    
 }
 
 .hero__list--numbers {
@@ -230,6 +283,8 @@ margin-bottom: 20px;
 
 .hero-image--icecream {
 
+    
+
     position: absolute;
     bottom: 0;
 right: 27%;
@@ -280,7 +335,27 @@ right: 100px;
     right: +1px;
     min-width: 100%;
     bottom: 0;
-    
+   pointer-events: none;
 
     
+}
+.hero__howmade--text {
+    color: #F8D24E;
+}
+.hero__howmade--text:hover {
+    color: #0A8817;
+    cursor: pointer;
+}
+
+.hero__howmade--text:focus {
+    color: #FCFCFC;
+    cursor: pointer;
+}
+.hero__howmade--text:disabled {
+    color: #ABABAB;
+    cursor: pointer;
+}
+
+.hero__product--text {
+    color: #000000;
 }
