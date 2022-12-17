@@ -24,13 +24,20 @@ img {
 }
 
 .contacts__section {
+  position: absolute;
   margin-bottom: 60px;
 }
 
+.contacts__container {
+
+  @media screen and (min-width: 768px){
+    display: flex;
+    gap: 16px;
+}
+}
+
 .contacts__list {
-  display: flex;
   margin-bottom: 16px;
-  flex-wrap: wrap;
 }
 
 .contacts__item {
@@ -46,6 +53,13 @@ img {
   background: $white-txt-cl;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  @media screen and (min-width: 768px){
+    width: calc((100% - 32px)/3);
+    padding-left: 24px;
+    padding-bottom: 40px;
+
+}
 }
 
 .contacts__top-text,
@@ -69,6 +83,11 @@ img {
 
   margin-bottom: 20px;
   padding: 4px 22px;
+
+  @media screen and (min-width: 768px){
+    font-size: 16px;
+    line-height: 1.4;
+}
 }
 
 .contacts__second-text {
@@ -80,14 +99,20 @@ img {
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
-
+  min-width: 62px;
 
   margin-bottom: 8px;
   color: $main-txt-cl;
+
+  @media screen and (min-width: 768px){
+    font-size: 14px;
+    line-height: 1.9;
+}
 }
 
 .contacts__address {
   position: relative;
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -99,6 +124,12 @@ img {
 
   margin-bottom: 0;
 
+  @media screen and (min-width: 768px){
+    min-width: 173px;
+    height: 71px;
+    font-size: 14px;
+    line-height: 1.9;
+}
 
 }
 
@@ -113,6 +144,9 @@ img {
   width: 216px;
 
   border: 1px solid #E1E1E1;
+  @media screen and (min-width: 768px){
+    width: 176px;
+}
 }
 
 .contacts__schedule {
@@ -138,9 +172,15 @@ line-height: 1.83;
 min-width: 98px;
 height: 22px;
 
-
-
 color: $main-txt-cl;
+
+@media screen and (min-width: 768px){
+  min-width: 115px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
 }
 
 .contacts__hour {
@@ -151,6 +191,13 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.83;
 color: $grey-bt-cl;
+
+@media screen and (min-width: 768px){
+  min-width: 144px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 1.9;
+}
 }
 
 .contacts__info {
@@ -187,6 +234,12 @@ line-height: 1.58;
 
 color: $main-txt-cl;
 text-decoration: none;
+
+@media screen and (min-width: 768px){
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 }
 
 .contacts__buttons-list {
