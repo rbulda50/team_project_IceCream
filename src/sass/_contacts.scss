@@ -54,6 +54,7 @@ img {
 
   @media screen and (min-width: 768px){
     width: calc((100% - 32px) / 3);
+    height: 537px
 }
 }
 
@@ -141,6 +142,8 @@ img {
   border: 1px solid #E1E1E1;
   @media screen and (min-width: 768px){
     width: 176px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 }
 
