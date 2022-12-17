@@ -190,35 +190,31 @@
     }
     
 }
-.about__item:last-child {
+.about__text:last-child {
     @media screen and (max-width: calc(#{$tablet} - 1px)) {
         display: none;
 
     }
 
     @media screen and (min-width:$tablet)  {
-        .about__text {  line-height: calc(23/12);
+        line-height: calc(23/12);
 
-    }
+    
 
 }}
 
-.about__item:first-child {
-    @media screen and (max-width: calc(#{$tablet} - 1px)) {
+.about__text:first-child {
+    @media screen and (max-width: calc(#{$tablet} - 1px)){
         margin-bottom: 4px;
-        .about__text {
-            line-height: calc(21/12);}
-    
-        }
+        line-height: calc(21/12);        }
     @media screen and (min-width:$desktop) {
-        .about__text {
             font-size: 16px;
             line-height: calc(28/16);
             }
     }
-}
 
-.about__item:not(:last-child ){
+
+.about__text:not(:last-child ){
     @media screen and (min-width:$tablet){
     margin-bottom: 8px;}
 }
