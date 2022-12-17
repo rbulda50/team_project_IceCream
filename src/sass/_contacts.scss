@@ -23,9 +23,15 @@ img {
     width: 100%;
 }
 
+.background-wrapper {
+  position: relative;
+}
+
 .contacts__section {
   position: absolute;
   margin-bottom: 60px;
+  top: 80%;
+  bottom: 0;
 }
 
 .contacts__container {
@@ -59,6 +65,10 @@ img {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @media screen and (min-width: 480px){
+    width: 440px;
+ }
+
   @media screen and (min-width: 768px){
     width: calc((100% - 32px) / 3);
     height: 537px;
@@ -79,7 +89,6 @@ img {
   align-items: center;
   text-align: center;
 
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -125,6 +134,7 @@ img {
 }
 
 .contacts__text {
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -160,6 +170,11 @@ img {
 
   margin-bottom: 0;
 
+  @media screen and (min-width: 480px){
+    font-size: 16px;
+    line-height: 1.81;
+  }
+
   @media screen and (min-width: 768px){
     min-width: 173px;
     height: 71px;
@@ -184,6 +199,11 @@ img {
   width: 216px;
 
   border: 1px solid #E1E1E1;
+
+  @media screen and (min-width: 480px){
+    width: 376px;
+  }
+
   @media screen and (min-width: 768px){
     width: 176px;
     margin-top: 32px;
@@ -288,7 +308,7 @@ color: $main-txt-cl;
 
 .contacts__tel,
 .contacts__mail {
-
+font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 1.58;
