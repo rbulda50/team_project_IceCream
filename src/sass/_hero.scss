@@ -16,6 +16,9 @@ border: none;
 }
 .hero__arrow {
     fill: #FCFCFC;
+    @media screen and (min-width:768px)  {
+        
+    }
     
 }
 
@@ -101,9 +104,12 @@ color: #F8D24E;
     @media screen and (min-width:768px) {
         display: block;
         margin-top: 28px;
+        
         text-align: right;
         @media screen and (min-width:1200px) {
 margin-top: 56px;
+
+
         }
     }
 
@@ -114,17 +120,13 @@ margin-top: 56px;
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 39px;
         width: 139px;
-        margin-left: 184px;
-
         
         
     }
     @media screen and (min-width:1200px)  {
-        width: 200px;
-        margin-left: 240px;
-        margin-top: 109px;
+        
+        
         
     }
 }
@@ -174,7 +176,7 @@ text-align: right;
 
 color: #FCFCFC;
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1200px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -183,14 +185,22 @@ color: #FCFCFC;
     text-align: right;
     
     color: #FCFCFC;
+    letter-spacing: 0.3px;
+    
+
 }
 }
 .hero__text--p {
-    margin: 0px;
+    
     font-weight: 400;
 font-size: 12px;
 line-height: 140%;
-
+margin-bottom: 20px;
+margin-top: 39px;
+@media screen and (min-width:1200px)  {
+    margin-bottom: 32px;
+    margin-top: 109px;
+}
 
 
 color: #FCFCFC;
@@ -205,7 +215,7 @@ right: 159px;
 @media screen and (min-width:768px) {
     position: absolute;
     bottom: 0;
-right: 226px;
+right: 100px;
 
 
 }
@@ -226,10 +236,19 @@ right: 226px;
     
 }
 .hero-image--dots {
-    position: absolute;
+    position: fixed;
     right: +1px;
-    width: 100%;
+    min-width: 320px;
     bottom: 0;
     margin: 0px;
     padding: 0px;
+
+    @media screen and (min-width:768px) {
+        position: absolute;
+    right: +1px;
+    min-width: 100%;
+    bottom: 0;
+    margin: 0px;
+    padding: 0px;
+    }
 }
