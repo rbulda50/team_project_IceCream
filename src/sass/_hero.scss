@@ -96,11 +96,15 @@ margin-top: 56px;
         margin-top: 39px;
         width: 139px;
         margin-left: 184px;
+
+        
         
     }
     @media screen and (min-width:1200px)  {
         width: 200px;
         margin-left: 257px;
+        margin-top: 109px;
+        
     }
 }
 .hero__container {height: 451px;
@@ -165,13 +169,14 @@ color: #FCFCFC;
     font-weight: 400;
 font-size: 12px;
 line-height: 140%;
-/* or 17px */
+
 
 
 color: #FCFCFC;
 margin-bottom: 20px;
 }
 .hero-image--icecream {
+
     position: absolute;
     bottom: 0;
 right: 149px;
@@ -187,6 +192,7 @@ right: 226px;
     display: none;
     @media screen and (min-width:768px) {
         position: absolute;
+       
     }
 
     
@@ -195,4 +201,6 @@ right: 226px;
     position: absolute;
     width: 100%;
     bottom: 0;
+    margin: 0px;
+    padding: 0px;
 }
