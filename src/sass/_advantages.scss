@@ -105,23 +105,6 @@
     }
 }
 
-.advantages__container{
-    
-        @media screen and (min-width: 480px) {
-            width: 480px;
-        }
-        @media screen and (min-width: 768px) {
-            width: 768px;
-            padding-right: 34px;
-            padding-left: 34px;
-        }
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-}
-
 .advantages__item:first-child::before {
     content: ' ';
     margin-left: auto;
