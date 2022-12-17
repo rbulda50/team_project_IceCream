@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-            position: absolute;
+        position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -49,12 +49,16 @@
             }
 
         .modal-made__video {
-            width: 224px;
-            height: 199px;
+            width: 100%;
+                height: 100%;
     
     
             background: #131313;
             border-radius: 10px;
+        }
+        .modal-made__iframe {
+            width: 100%;
+            height: 100%;
         }
         .modal-made__text {
             font-family: $main-font;
@@ -62,90 +66,40 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 140%;
-    
+            
             color: $main-txt-cl;
         }
-         .modal-made__iframe {
-                     width: 100%;
-                     height: auto;
-                 }
+       
     }
        
     @media screen and (min-width:$mobile) {
-        .modal-made {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
         
-                width: 280px;
-                height: 459px;
-                padding: 28px;
-        
-                background: #FCFCFC;
-                border: 2px solid $yellow-txt-cl;
-                border-radius: 10px;
-            }
-        
-        
-        
-            .modal-made__icon {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                border: none;
-                background-color: inherit;
-                outline: none;
-        
-                &-close {
-                    fill: #131313;
-                }
-            }
-        
-        
-        
-            .modal-made__title {
-                font-family: $secondary-font;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: calc(24/16);
-                color: $main-txt-cl;
-                text-align: center;
-            }
-        
-            .modal-made__video {
-                width: 224px;
-                height: 199px;
-        
-        
-                background: #131313;
-                border-radius: 10px;
-            }
-        
-            .modal-made__text {
-                font-family: $main-font;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 140%;
-        
-                color: $main-txt-cl;
-            }
-        
-            .modal-made__iframe {
-                width: 100%;
-                height: auto;
-            }
     }
 
 
     @media screen and (min-width:$tablet) {
-        
-        
+        .modal-made {
+                gap: 32px;
+                        
+                width: 568px;
+                height: 449px;
+                padding-top: 32px;
+                padding-right: 60px;
+                padding-bottom: 32px;
+                padding-left: 60px;
+
+                
+            }
+        .modal-made__title {
+            
+            font-size: 20px;
+            line-height: calc(28/20);
+        }
+        .modal-made__text {
+           
+            font-size: 16px;
+            text-align: justify;
+        }
     }
 
     @media screen and (min-width:$desktop) {
