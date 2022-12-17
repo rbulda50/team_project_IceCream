@@ -1,6 +1,7 @@
 .hero {
 background-color: #84A178;
 border: none;
+
 }
 .hero__title {
     margin: 0;
@@ -16,4 +17,169 @@ border: none;
 .hero__arrow {
     fill: #FCFCFC;
     
+}
+
+.hero__title {
+    font-family: 'Seymour One';
+font-style: normal;
+    font-weight: 400;
+font-size: 26px;
+line-height: 33px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FCFCFC;
+max-width: 247px;
+margin-bottom: 32px;
+
+}
+.hero__title--box {
+    max-width: 247px;
+    margin-left: 20px;
+}
+.hero__list {
+    display: flex;
+    gap: 12px;
+}
+.hero__list--products {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+border: 2px solid #F8D24E;
+border-radius: 8px;
+}
+.hero__list--howmade {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+
+color: #F8D24E;
+}
+.hero__product--text {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.hero__list--numbers {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-top: 28px;
+        text-align: right;
+        @media screen and (min-width:1200px) {
+margin-top: 56px;
+        }
+    }
+
+}
+.hero__text {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 39px;
+        width: 139px;
+        margin-left: 184px;
+        
+    }
+    @media screen and (min-width:1200px)  {
+        width: 200px;
+        margin-left: 257px;
+    }
+}
+.hero__container {height: 451px;
+position: relative;
+
+@media screen and (min-width:768px) {
+height: 345px;
+}
+@media screen and (min-width:1200px) {
+    height: 594px;}
+}
+.hero__div {
+    display: flex;
+    justify-content: space-between;
+}
+.hero__list--number {
+    font-weight: 900;
+font-size: 28px;
+line-height: 34px;
+text-align: right;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #131313;
+
+@media screen and (min-width:768px)  {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    /* identical to box height */
+    
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #131313;
+}
+}
+.hero__list--name {
+    font-weight: 400;
+font-size: 8px;
+line-height: 10px;
+/* identical to box height */
+
+text-align: right;
+
+color: #FCFCFC;
+
+@media screen and (min-width:768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #FCFCFC;
+}
+}
+.hero__text--p {
+    margin: 0px;
+    font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+/* or 17px */
+
+
+color: #FCFCFC;
+margin-bottom: 20px;
+}
+.hero-image--icecream {
+    position: absolute;
+    bottom: 0;
+right: 149px;
+
+@media screen and (min-width:768px) {
+    position: absolute;
+    bottom: 0;
+right: 226px;
+}
+
 }
