@@ -244,9 +244,11 @@ right: 100px;
 
 }
 .hero-image--plate {
-    display: none;
+    @media screen and (max-width:767.8px) 
+    {display: none;} 
     @media screen and (min-width:768px) {
         position: absolute;
+        bottom: 0;
        
     }
 
