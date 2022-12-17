@@ -21,7 +21,17 @@ border: none;
     }
     
 }
-
+.hero__title--one {
+    @media screen and (max-width:767.8px) {
+ font-size: 26px;
+ letter-spacing: 0.05em
+    }
+}
+.hero__title--two {
+    @media screen and (max-width:767.8px) {
+        font-size: 37px;
+    }
+}
 .hero__title {
     font-family: 'Seymour One';
 font-style: normal;
@@ -33,6 +43,8 @@ text-transform: uppercase;
 color: #FCFCFC;
 width: 247px;
 margin-bottom: 32px;
+
+
 
 @media screen and (min-width:1200px) {
     width: 367px;
@@ -125,8 +137,8 @@ margin-top: 56px;
         
     }
     @media screen and (min-width:1200px)  {
-        
-        
+        width: 200px;
+        margin-left: 241px;
         
     }
 }
@@ -210,7 +222,7 @@ margin-bottom: 20px;
 
     position: absolute;
     bottom: 0;
-right: 159px;
+right: 65px;
 
 @media screen and (min-width:768px) {
     position: absolute;
@@ -236,19 +248,12 @@ right: 100px;
     
 }
 .hero-image--dots {
-    position: fixed;
-    right: +1px;
-    min-width: 320px;
-    bottom: 0;
-    margin: 0px;
-    padding: 0px;
-
-    @media screen and (min-width:768px) {
-        position: absolute;
+    position: absolute;
     right: +1px;
     min-width: 100%;
     bottom: 0;
     margin: 0px;
     padding: 0px;
-    }
+
+    
 }
