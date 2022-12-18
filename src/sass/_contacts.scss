@@ -16,19 +16,7 @@ ol {
   position: absolute;
   margin-bottom: 60px;
   bottom: auto;
-  top: 71%;
-
-  @media screen and (min-width: 480px){
-    top: 75%;
- }
-
-  @media screen and (min-width: 768px){
-    top: 82%;
-}
-
-  @media screen and (min-width: 1200px){
-  top: 93%;
-}
+  top: 67%;
 }
 
 .contacts__list {
