@@ -15,6 +15,10 @@ p {
   padding-top: 1092px;
   background-color: #84a178;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 480px){
+    padding-top: 360px;
+ }
 }
 
 .footer-title {
