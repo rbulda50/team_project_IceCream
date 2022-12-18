@@ -1,9 +1,7 @@
 
 
 
-    @media screen and (min-width:320px) 
-    {
-        .modal-made {
+    .modal-made {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -70,14 +68,9 @@
             color: $main-txt-cl;
         }
        
-    }
+    
        
-    @media screen and (min-width:$mobile) {
-        
-    }
-
-
-    @media screen and (min-width:$tablet) {
+       @media screen and (min-width:$tablet) {
         .modal-made {
                 gap: 32px;
                         
