@@ -172,8 +172,10 @@ p {
   }
 }
 .copyright {
-  margin-right: auto;
-  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: -20px;
+  margin-left: -20px;
   min-width: 280px;
   font-family: 'Montserrat';
   font-weight: 700;
@@ -186,10 +188,13 @@ p {
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
+      margin-right: -32px;
+        margin-left: -32px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 12px;
     line-height: 1.83;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-
