@@ -2,18 +2,27 @@ p {
   margin: 0;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+// .list {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
 .link {
   text-decoration: none;
 }
 
 .footer {
+  padding-top: 1092px;
   background-color: #84a178;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 768px){
+    padding-top: 360px;
+ }
+
+ @media screen and (min-width: 1200px){
+  padding-top: 636px;
+}
 }
 
 .footer-title {
