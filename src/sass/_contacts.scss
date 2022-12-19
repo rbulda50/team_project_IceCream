@@ -246,7 +246,7 @@ ol {
 
 }
 
-.contacts_schedule-list {
+.contacts_schedule-item {
   font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -362,7 +362,7 @@ color: $grey-bt-cl;
 
   @media screen and (min-width: 768px){
     margin-bottom: 4px;
-    padding-top: 32px;
+    margin-top: 32px;
   }
 }
 
