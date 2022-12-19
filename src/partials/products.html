@@ -1,78 +1,80 @@
-<div class="container">
-    <div class="products" id="our-products">
-        <p class="products__label">
-            100% natural
-        </p>
-        <h2 class="products__title">products</h2>
-    
-        <ul class="products__list">
+<section class="products" id="our-products">
+    <div class="container">
+        
+            <p class="products__label">
+                100% natural
+            </p>
+            <h2 class="products__title">products</h2>
+        
+            <ul class="products__list">
+                
+                <li class="products__list-item">
+                    <h3 class="products__list-title">ice cream</h3>
+                    <span class="products__list-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</span>
+                    <button class="products__icon" data-ingredients1-modal-open>
+                        <svg class="" width="40" height="16">
+                        <use href="./images/icons.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="products__photo">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/product/ice-cream_s@1x.png, ./images/product/ice-cream_s@2x.png ">
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/ice-cream_m@1x.png, ./images/product/ice-cream_m@2x.png ">
+                            <source media="(min-width: 1200px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
+                            <img
+                            class="products__img"
+                            src="./images/product/ice-cream_s@1x.png"
+                            alt="ice-cream image"
+                        />
+                        </picture>
+                    </div>
+                </li>
             
-            <li class="products__list-item">
-                <h3 class="products__list-title">ice cream</h3>
-                <span class="products__list-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</span>
-                <button class="products__icon" data-ingredients1-modal-open>
-                    <svg class="" width="40" height="16">
-                      <use href="./images/icons.svg#arrow"></use>
-                    </svg>
-                </button>
-                <div class="products__photo">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="./images/product/ice-cream_s@1x.png, ./images/product/ice-cream_s@2x.png ">
-                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/ice-cream_m@1x.png, ./images/product/ice-cream_m@2x.png ">
-                        <source media="(min-width: 1200px)" srcset="./images/product/ice-cream_xl@1x.png, ./images/product/ice-cream_xl@2x.png ">
-                        <img
-                        class="products__img"
-                        src="./images/product/ice-cream_s@1x.png"
-                        alt="ice-cream image"
-                      />
-                      </picture>
-                </div>
-            </li>
-           
-            <li class="products__list-item">
-                <h3 class="products__list-title">ice coffee</h3>
-                <span class="products__list-text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</span>
-                <button class="products__icon" data-ingredients2-modal-open>
-                    <svg class="" width="40" height="16">
-                      <use href="./images/icons.svg#arrow"></use>
-                    </svg>
-                </button>
-                <div class="products__photo">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="./images/product/cofee_s@1x.png, ./images/product/cofee_s@2x.png ">
-                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/cofee_m@1x.png, ./images/product/cofee_m@2x.png ">
-                        <source media="(min-width: 1200px)" srcset="./images/product/cofee_xl@1x.png, ./images/product/cofee_xl@2x.png ">
-                        <img
-                        class="products__img"
-                        src="./images/product/cofee_s@1x.png"
-                        alt="ice-cofee image"
-                      />
-                      </picture>
-                </div>
-            </li>
+                <li class="products__list-item">
+                    <h3 class="products__list-title">ice coffee</h3>
+                    <span class="products__list-text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</span>
+                    <button class="products__icon" data-ingredients2-modal-open>
+                        <svg class="" width="40" height="16">
+                        <use href="./images/icons.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="products__photo">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/product/cofee_s@1x.png, ./images/product/cofee_s@2x.png ">
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/cofee_m@1x.png, ./images/product/cofee_m@2x.png ">
+                            <source media="(min-width: 1200px)" srcset="./images/product/cofee_xl@1x.png, ./images/product/cofee_xl@2x.png ">
+                            <img
+                            class="products__img"
+                            src="./images/product/cofee_s@1x.png"
+                            alt="ice-cofee image"
+                        />
+                        </picture>
+                    </div>
+                </li>
 
-            <li class="products__list-item">
-                <h3 class="products__list-title">milkshakes</h3>
-                <span class="products__list-text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</span>
-                <button class="products__icon" data-ingredients3-modal-open>
-                    <svg class="" width="40" height="16">
-                      <use href="./images/icons.svg#arrow"></use>
-                    </svg>
-                </button>
-                <div class="products__photo">
-                    <picture>
-                        <source media="(max-width: 767px)" srcset="./images/product/coctail_s@1x.png, ./images/product/coctail_s@2x.png ">
-                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/coctail_m@1x.png, ./images/product/coctail_m@2x.png ">
-                        <source media="(min-width: 1200px)" srcset="./images/product/coctail_xl@1x.png, ./images/product/coctail_xl@2x.png ">
-                        <img
-                        class="products__img"
-                        src="./images/product/coctail_s@1x.png"
-                        alt="milkshakes image"
-                      />
-                      </picture>
-                </div>
-            </li>
-            
-        </ul>
+                <li class="products__list-item">
+                    <h3 class="products__list-title">milkshakes</h3>
+                    <span class="products__list-text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</span>
+                    <button class="products__icon" data-ingredients3-modal-open>
+                        <svg class="" width="40" height="16">
+                        <use href="./images/icons.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="products__photo">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/product/coctail_s@1x.png, ./images/product/coctail_s@2x.png ">
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/product/coctail_m@1x.png, ./images/product/coctail_m@2x.png ">
+                            <source media="(min-width: 1200px)" srcset="./images/product/coctail_xl@1x.png, ./images/product/coctail_xl@2x.png ">
+                            <img
+                            class="products__img"
+                            src="./images/product/coctail_s@1x.png"
+                            alt="milkshakes image"
+                        />
+                        </picture>
+                    </div>
+                </li>
+                
+            </ul>
+        
     </div>
-</div>
+</section>
