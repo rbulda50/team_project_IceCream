@@ -16,7 +16,23 @@ ol {
   position: absolute;
   margin-bottom: 60px;
   bottom: auto;
-  top: 67%;
+  left: 50%;
+  top: 133%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px){
+
+    top: 103%;
+}
+
+   @media screen and (min-width: 1200px){
+    top: 120%;
+}
+}
+
+.contacts__container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__list {
@@ -34,8 +50,8 @@ ol {
 .contacts__item {
   position: relative;
 
-  width: 280px;
-  height: 412px;
+  width: 100%;
+  min-height: 412px;
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
@@ -158,6 +174,7 @@ ol {
   min-width: 190px;
   height: 40px;
 
+
   color: $orange-bg-cl;
 
   margin-bottom: 0;
@@ -176,7 +193,6 @@ ol {
    @media screen and (min-width: 1200px){
     font-size: 16px;
     line-height: 1.81;
-    min-width: none;
   }
 
 }
@@ -222,10 +238,12 @@ ol {
 
 .contacts__schedule-list {
   margin-bottom: 24px;
+  min-width: 216px ;
 }
 
 .contacts__schedule-item:not(:last-child) {
   padding-bottom: 8px;
+
 }
 
 .contacts__schedule-day {
@@ -290,11 +308,13 @@ color: $grey-bt-cl;
 
 .contacts__info {
 
-font-weight: 500;
-font-size: 12px;
-line-height: 1.58;
+  width: 130px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
 
-color: $main-txt-cl;
+  color: $main-txt-cl;
 
 }
 
