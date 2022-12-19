@@ -5,6 +5,7 @@
     const closeAnchorLink = document.querySelector('.js-close-anchor');
     const closeAnchorTwoLink = document.querySelector('.js-close-anchortwo');
     const closeAnchorThreeLink = document.querySelector('.js-close-anchorthree');
+    const closeAnchorFourLink = document.querySelector('.js-close-anchorfour');
 
     const toggleMenu = () => {
       const isMenuOpen =
@@ -23,6 +24,7 @@
     closeAnchorLink.addEventListener('click', toggleMenu);
     closeAnchorTwoLink.addEventListener('click', toggleMenu);
     closeAnchorThreeLink.addEventListener('click', toggleMenu);
+    closeAnchorFourLink.addEventListener('click', toggleMenu);
 
     // Close the mobile menu on wider screens if the device orientation changes
     window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
