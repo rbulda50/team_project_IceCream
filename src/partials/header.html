@@ -2,15 +2,23 @@
     <div class="container header__container">
       <nav class="header__nav ">
         <div class="header__logo">
-          <img  srcset="
+          <picture>
+            <source media="(min-width:320px)" srcset="./images/logo_mb.png">
+            <source media="(min-width:768px)" srcset="./images/logo_tb.png">
+            <source media="(min-width:1200px )" srcset="./images/logo.png">
+            <img class="header__img" src="./images/logo.png" alt="logo">
+          </picture>
+          <!-- <img 
+           srcset="
               ./images/logo.png 65w,
               ./images/logo_tb.png 48w,
               ./images/logo_mb.png 40w" 
               sizes="(min-width: 1200px) 65px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw" 
               src="./images/logo.png " 
               alt="лого" 
-              loading="lazy" 
-              width="40px"/>
+              loading="lazy"
+              width="40px" 
+              /> -->
         </div>
         <ul class="header__list list-clear">
           <li><a href="/" class="header__item">Home</a></li>
