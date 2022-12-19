@@ -7,57 +7,67 @@
           </button>
 
           <h2 class="modal-buy__title">Buy now</h2>
-          <ul class="ice-cream-types">
+          <ol class="ice-cream-types">
             <li class="ice-cream-types__item">
-                <div class="modal-buy__photo-container">
+              <input class="ice-cream-types__ckeckbox" type="checkbox" name="ice-cream__type" value="ice-cream" checked />
+                <div class="modal-buy__photo-container modal-buy__photo-container--first">
                     <picture class="modal-buy__photo">
-                        <img src="./images/products.-modal-windows/chololate@1x.png" alt="icecream">
+                      <source media="(min-width:480px )" srcset="./images/modal-buy/icecream-modal-buy1x.png, ./images/modal-buy/icecream-modal-buy2x.png">
+                      <img src="./images/modal-buy/icecream-modal-buy1x.png" alt="icecream">
                       </picture>
-                  <div class="ice-cream__round">
+                  <div class="ice-cream__round ice-cream__round--first">
                       <p class="ice-cream__text">ice cream</p>
                   </div>
                 </div>
             </li>
             <li class="ice-cream-types__item">
-                <div class="modal-buy__photo-container">
+              <input class="ice-cream-types__ckeckbox" type="checkbox" name="ice-cream__type" value="ice-coffee"/>
+
+                <div class="modal-buy__photo-container modal-buy__photo-container--second">
                     <picture class="modal-buy__photo">
-                        <img src="./images/products.-modal-windows/chololate@1x.png" alt="icecream">
+                      <source media="(min-width:480px )" srcset="./images/products.-modal-windows/cofee_s@1x.png, ./images/products.-modal-windows/cofee_s@2x.png">
+                      <img src="./images/products.-modal-windows/cofee_s@1x.png" alt="icecoffee">
                       </picture>
-                      <div class="ice-cream__round">
-                        <p class="ice-cream__content">ice coffee</p>
+                      <div class="ice-cream__round ice-cream__round--second">
+                        <p class="ice-cream__text">ice coffee</p>
                     </div>
                   </div>
             </li>
             <li class="ice-cream-types__item">
-                <div class="modal-buy__photo-container">
+              <input class="ice-cream-types__ckeckbox" type="checkbox" name="ice-cream__type" value="milkshake"/>
+                <div class="modal-buy__photo-container modal-buy__photo-container--third">
                     <picture class="modal-buy__photo">
-                        <img src="./images/products.-modal-windows/chololate@1x.png" alt="icecream">
+                      <source media="(min-width:480px )" srcset="./images/products.-modal-windows/milkshake_s@1x.png, ./images/products.-modal-windows/milkshake_s@1x.png">
+                      <img src="./images/products.-modal-windows/milkshake_s@1x.png" alt="milkshakes">
                       </picture>
-                      <div class="ice-cream__round">
-                        <p class="ice-cream__content">milkshake</p>
+                      <div class="ice-cream__round ice-cream__round--third">
+                        <p class="ice-cream__text">milkshake</p>
                     </div>
                   </div>
             </li>
-          </ul>
+          </ol>
 
 
-          <form class="form form-ingr">
+          <form class="form form-buy">
             <input
-              class="form__input"
+              class="form-buy__input"
               type="text"
               name="username"
               placeholder="Name"
-              required
+              pattern="[A-Za-z0-9]{6,}"
+              title="Логін не может бути меншим за 6 латинських символів."
+              autofocus
             />
             <input
-              class="form__input"
+              class="form-buy__input"
               type="tel"
               name="phone"
               placeholder="Phone"
-              required
+              pattern=".{8,}"
+              title="Пароль не може бути меншим за вісім символів"
             />
             <textarea
-            class="form__input form__input--multiline"
+            class="form-buy__input form-buy__input--multiline"
             name="comment"
             placeholder="Comment"
             ></textarea>
