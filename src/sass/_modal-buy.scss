@@ -64,30 +64,36 @@
             }
     
         }
-
-            &__button-send{
-                min-width: 132px;
-                padding: 12px 34px;
-                margin: 0 auto;
-                
-            
-                border: none;
-            
-                background: $yellow-bt-cl;
-                border-radius: 10px;
-            
-                font-family: $main-font;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 1.21;
-                display: block;
-                align-items: center;
-                text-align: center;
-            
-            color: #131313;
-              }
     }    
+
+    .modal-buy__button-send{
+        min-width: 132px;
+        padding: 12px 34px;
+        margin: 0 auto;
+        
+    
+        border: none;
+    
+        background: $yellow-bt-cl;
+        border-radius: 10px;
+    
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        display: block;
+        align-items: center;
+        text-align: center;
+    
+        color: #131313;
+
+        &:hover,
+        &:focus {
+        color: $white-txt-cl;
+        background-color: $green-bt-cl;
+        }
+      }
 
     .modal-buy__photo-container {
         position: relative;
