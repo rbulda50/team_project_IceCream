@@ -101,7 +101,6 @@
             padding: 12px 34px;
             margin: 0 auto;
             
-        
             border: none;
         
             background: $yellow-bt-cl;
@@ -118,6 +117,11 @@
             cursor: pointer;
         
         color: #131313;
+        }
+
+        &__button-send:hover,
+        &__button-send:focus {
+            background-color: $green-bt-cl;
         }
     }
 
