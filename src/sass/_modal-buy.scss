@@ -166,8 +166,22 @@
             margin-bottom: 100px;
             }
 
-        
  }
+
+.ice-cream-types__item:first-child:hover  .ice-cream__round--first,
+.ice-cream-types__item:first-child:focus  .ice-cream__round--first{
+    background-color: #96AF8C;
+}
+
+.ice-cream-types__item:nth-child(2n):hover  .ice-cream__round--second,
+.ice-cream-types__item:nth-child(2n):focus  .ice-cream__round--second {
+    background-color: #EFD478;
+}
+
+.ice-cream-types__item:nth-child(3n):hover  .ice-cream__round--third,
+.ice-cream-types__item:nth-child(3n):focus  .ice-cream__round--third {
+    background-color: #D6936D;
+}
       
       .ice-cream__round {
         display: flex;
@@ -187,7 +201,6 @@
 }
 
 .ice-cream__round--second {
-    background-color: #EFD478;
     border: 2px solid #EFD478;
     box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 }
