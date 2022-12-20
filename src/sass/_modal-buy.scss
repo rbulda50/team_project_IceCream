@@ -129,11 +129,44 @@
         @include transitionRules (transform);
     
         .ice-cream-types__item:hover &,
-        .ice-cream-types__ckeckbox:checked & {
+        .ice-cream-types__item:focus & {
             transform: scale(1.1);
                 }
     }
 
+     
+    .ice-cream-types__ckeckbox--first:checked ~ .modal-buy__photo-container--first>.modal-buy__photo  {
+        transform: scale(1.2);
+        border: solid 2px #96AF8C;
+        border-radius: 50%;
+    }
+
+    .ice-cream-types__ckeckbox--second:checked ~ .modal-buy__photo-container--second>.modal-buy__photo  {
+        transform: scale(1.2);
+        border: solid 2px #EFD478;
+        border-radius: 50%;
+    }
+
+    .ice-cream-types__ckeckbox--third:checked ~ .modal-buy__photo-container--third>.modal-buy__photo  {
+        transform: scale(1.2);
+        border: solid 2px #D6936D;
+        border-radius: 50%;
+    }
+
+    .ice-cream-types__ckeckbox--first:checked ~ .modal-buy__photo-container--first>.ice-cream__round  {
+        background-color:  #96AF8C;
+    }
+
+    .ice-cream-types__ckeckbox--second:checked ~ .modal-buy__photo-container--second>.ice-cream__round  {
+        background-color:  #EFD478;
+    }
+
+    .ice-cream-types__ckeckbox--third:checked ~ .modal-buy__photo-container--third>.ice-cream__round  {
+        background-color: #D6936D;
+    }
+
+
+    
     
 
     .ice-cream-types {
