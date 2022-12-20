@@ -4,3 +4,6 @@ import './js/mobile-menu';
 import './js/modal-buy';
 import './js/modal-ingredients';
 import './js/modal-made';
+import './js/modal-locations';
+import './js/modal-franchise';
+import './js/video-close';

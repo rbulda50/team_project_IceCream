@@ -1,22 +1,30 @@
-<header class="header" >
+<header class="header" id="home">
     <div class="container header__container">
       <nav class="header__nav ">
         <div class="header__logo">
-          <img  srcset="
+          <picture>
+            <source media="(min-width:320px)" srcset="./images/logo_mb.png">
+            <source media="(min-width:768px)" srcset="./images/logo_tb.png">
+            <source media="(min-width:1200px )" srcset="./images/logo.png">
+            <img class="header__img" src="./images/logo.png" alt="logo">
+          </picture>
+          <!-- <img 
+           srcset="
               ./images/logo.png 65w,
               ./images/logo_tb.png 48w,
               ./images/logo_mb.png 40w" 
               sizes="(min-width: 1200px) 65px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw" 
               src="./images/logo.png " 
               alt="лого" 
-              loading="lazy" 
-              width="40px"/>
+              loading="lazy"
+              width="40px" 
+              /> -->
         </div>
         <ul class="header__list list-clear">
           <li><a href="/" class="header__item">Home</a></li>
           <li><a href="#about" class="header__item">How it’s made?</a></li>
           <li><a href="#our-products" class="header__item">Our products</a></li>
-          <li><a href="/" class="header__item">Contact</a></li>
+          <li><a href="#contacts" class="header__item">Contact</a></li>
         </ul>
       <button
           class="button header__menu-toggle js-open-menu"
@@ -27,7 +35,7 @@
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-        <button class="button buy-now-button" buy-modal-open>Buy now
+        <button class="button buy-now-button" data-buy-modal-open>Buy now
           <svg class="buy-now-button__svg" width="12" height="20">
                 <use href="./images/icons.svg#button-arrow-right"></use>
               </svg>

@@ -51,6 +51,10 @@
   padding: 0;
    list-style: none;
   margin-bottom: 110px;
+  &__link:hover,
+  &__link:focus {
+    color: #000000;
+  }
 }
 
 .mobile-menu__item {
@@ -69,9 +73,6 @@
       margin-bottom: 40px;
     }
   }
-}
-.mobile-menu__item:nth-child(2) {
-    color: #131313;
 }
 
 .menu-container.is-open {

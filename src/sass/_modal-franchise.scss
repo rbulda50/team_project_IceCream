@@ -1,0 +1,175 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        .modal-franchise {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+    }
+    .modal-franchise__icon {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        border: none;
+        background-color: inherit ;
+        outline: none;
+        cursor: pointer;
+
+        &-close {
+            width: 20px;
+            height: 20px;
+            fill: #131313;
+
+            @media screen and (min-width:768px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .modal-franchise {
+        width: 280px;
+        height: fit-content;
+        padding: 28px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 2px solid #F8D24E;
+        max-height: 90%;
+        overflow-y: scroll;
+              
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width:768px) {
+            width: 568px;
+            overflow-y: auto;
+          
+            padding: 32px 60px;
+          }
+
+          &__title {
+            font-family: $secondary-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 322px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: $main-txt-cl;
+    
+            margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
+    
+            @media screen and (min-width:768px) {
+                font-size: 20px;
+                line-height: 1.4;
+                
+                margin-bottom: 24px;
+            }
+        }
+
+        &__text {            
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;  
+            color: $main-txt-cl;
+
+            margin-bottom: 24px;
+
+            @media screen and (min-width:768px) {
+                font-size: 16px;
+                
+                margin-bottom: 32px;
+            }
+        }
+
+        &__button-send{
+            min-width: 132px;
+            padding: 12px 34px;
+            margin: 0 auto;
+            
+            border: none;
+        
+            background: $yellow-bt-cl;
+            border-radius: 10px;
+        
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.21;
+            display: block;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        
+        color: #131313;
+        }
+
+        &__button-send:hover,
+        &__button-send:focus {
+            background-color: $green-bt-cl;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 368px;
+      
+        &__input {
+            padding: 12px 8px;
+            margin-bottom: 12px;
+            height: 32px;
+          
+            font-size: 12px;
+            line-height: 1.4;
+            
+            background-color: rgba(248, 210, 78, 0.1);
+            border-width: 1px;
+            border-style: solid;
+            
+            background: rgba(248, 210, 78, 0.1);
+            border: 1px solid #84A178;
+            border-radius: 10px;
+            
+            &:last-child {
+                margin-bottom: 32px;
+            }
+          }
+    
+          &__input::placeholder {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;   
+            color: $main-txt-cl;
+          }
+    
+          &__input--multiline {
+        
+            height: 64px;
+            resize: none;
+            margin-bottom: 32px;
+          }
+      }
