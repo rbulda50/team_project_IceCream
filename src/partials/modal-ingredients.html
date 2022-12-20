@@ -64,12 +64,14 @@
             </li>
           </ul>
 
-          <form class="form form-ingr">
+          <form class="form-ingr">
             <input
               class="form__input"
               type="text"
               name="username"
               placeholder="Name"
+              pattern="[A-Za-z0-9]{6,}"
+              title="Логін не может бути меншим за 6 латинських символів."
               required
             />
             <input
@@ -77,18 +79,21 @@
               type="tel"
               name="phone"
               placeholder="Phone"
+              pattern=".{8,}"
+              title="Номер телефону не може бути меншим за вісім символів"
               required
             />
             <textarea
             class="form__input form__input--multiline"
             name="comment"
             placeholder="Comment"
+            required
             ></textarea>
-        </form>
 
-          <button type="submit" class="modal-product__button-send" data-ingredients1-modal-send>
+          <button type="submit" class="modal-product__button-send">
             Submit
           </button>
+        </form>
     </div>
 </div>
 
@@ -165,6 +170,8 @@
             type="text"
             name="username"
             placeholder="Name"
+            pattern="[A-Za-z0-9]{6,}"
+            title="Логін не может бути меншим за 6 латинських символів."
             required
           />
           <input
@@ -172,18 +179,21 @@
             type="tel"
             name="phone"
             placeholder="Phone"
+            pattern=".{8,}"
+            title="Номер телефону не може бути меншим за вісім символів"
             required
           />
           <textarea
           class="form__input form__input--multiline"
           name="comment"
           placeholder="Comment"
+          required
           ></textarea>
-      </form>
 
-        <button type="submit" class="modal-product__button-send" data-ingredients2-modal-send>
+        <button type="submit" class="modal-product__button-send">
           Submit
         </button>
+      </form>
   </div>
 </div>
 
@@ -260,6 +270,8 @@
             type="text"
             name="username"
             placeholder="Name"
+            pattern="[A-Za-z0-9]{6,}"
+            title="Логін не может бути меншим за 6 латинських символів."
             required
           />
           <input
@@ -267,17 +279,20 @@
             type="tel"
             name="phone"
             placeholder="Phone"
+            pattern=".{8,}"
+            title="Номер телефону не може бути меншим за вісім символів"
             required
           />
           <textarea
           class="form__input form__input--multiline"
           name="comment"
           placeholder="Comment"
+          required
           ></textarea>
-      </form>
-
-        <button type="submit" class="modal-product__button-send" data-ingredients3-modal-send>
+          
+        <button type="submit" class="modal-product__button-send">
           Submit
         </button>
+      </form>
   </div>
 </div>

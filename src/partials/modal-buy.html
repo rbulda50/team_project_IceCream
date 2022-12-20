@@ -47,7 +47,7 @@
           </ol>
 
 
-          <form class="form form-buy">
+          <form class="form-buy">
             <input
               class="form-buy__input"
               type="text"
@@ -64,18 +64,19 @@
               name="phone"
               placeholder="Phone"
               pattern=".{8,}"
-              title="Пароль не може бути меншим за вісім символів"
+              title="Номер телефону не може бути меншим за вісім символів"
               required
             />
             <textarea
             class="form-buy__input form-buy__input--multiline"
             name="comment"
             placeholder="Comment"
+            required
             ></textarea>
-        </form>
 
-          <button type="submit" class="modal-buy__button-send" data-buy-modal-send>
+          <button type="submit" class="modal-buy__button-send">
             Submit
           </button>
+        </form>
     </div>
 </div>
