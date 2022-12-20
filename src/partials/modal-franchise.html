@@ -13,6 +13,8 @@
               type="text"
               name="username"
               placeholder="Name"
+              pattern="[A-Za-z0-9]{6,}"
+              title="Логін не может бути меншим за 6 латинських символів."
               required
             />
             <input
@@ -20,6 +22,8 @@
               type="tel"
               name="phone"
               placeholder="Phone"
+              pattern=".{8,}"
+              title="Номер телефону не може бути меншим за вісім символів"
               required
             />
             <input
@@ -27,16 +31,19 @@
               type="email"
               name="email"
               placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               required
             />
             <textarea
             class="form__input form__input--multiline"
             name="comment"
             placeholder="Comment"
+            required
             ></textarea>
-        </form>
-        <button type="submit" class="modal-franchise__button-send" data-franchise-modal-send>
+
+          <button type="submit" class="modal-franchise__button-send">
             Submit
           </button>
+        </form>
     </div>
 </div>

@@ -140,14 +140,6 @@
                 }
     }    
 
-    
-    
-
-
-
-    
-
-
     .callories {
         position: relative;
         display: flex;
@@ -258,11 +250,10 @@
 
 
 
-.form {
+.form-ingr {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 24px;
     max-width: 368px;
   
     &__input {
