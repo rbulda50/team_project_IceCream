@@ -205,17 +205,47 @@ margin-top: 56px;
         
     }
 }
-.hero__container {height: 451px;
-position: relative;
-border: none;
-outline: none;
 
-@media screen and (min-width:768px) {
-height: 345px;
+.hero__container {
+    height: 451px;
+    position: relative;
+    border: none;
+    outline: none;
+
+    background-image: url('../images/hero/dots_mb_1x.png');
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url('../images/hero/dots_mb_2x.png');   
+    }
+
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    background-size: contain;
+
+    @media screen and (min-width:768px) {
+        height: 345px;
+
+        background-image: url('../images/hero/dots_tb_1x.png');
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url('../images/hero/dots_tb_2x.png');   
+        }
+    }
+    @media screen and (min-width:1200px) {
+        height: 594px;
+
+        background-image: url('../images/hero/dots_ds_1x.png');
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: url('../images/hero/dots_ds_2x.png');   
+        }
+    }
 }
-@media screen and (min-width:1200px) {
-    height: 594px;}
-}
+
 .hero__div {
     display: flex;
     justify-content: space-between;
@@ -291,7 +321,7 @@ margin-bottom: 20px;
 
     position: absolute;
     bottom: 0;
-right: 27%;
+right: 35%;
 
 @media screen and (min-width:768px) {
     position: absolute;
@@ -326,25 +356,6 @@ right: 100px;
     
 }
 
-.hero-image--dots:nth-child(1) {
-    background-image: url(../images/hero/dots_mb_1x.png);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-
-    
-    }
-
-.hero-image--dots {
-    
-    
-    position: absolute;
-    right: +1px;
-    min-width: 100%;
-    bottom: 0;
-   pointer-events: none;
-
-    
-}
 .hero__howmade--text {
     color: #F8D24E;
 }
