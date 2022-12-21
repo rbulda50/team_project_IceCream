@@ -23,7 +23,9 @@
               type="tel"
               name="phone"
               placeholder="Phone"
-              pattern=".{8,}"
+              minlength="8"
+              maxlength="12"
+              pattern="\+?[0-9\s\-\(\)]+"
               title="Номер телефону не може бути меншим за вісім символів"
               required
             />
@@ -33,13 +35,11 @@
               name="email"
               placeholder="Email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              required
             />
             <textarea
             class="form__input form__input--multiline"
             name="comment"
             placeholder="Comment"
-            required
             ></textarea>
 
           <button type="submit" class="modal-franchise__button-send">
