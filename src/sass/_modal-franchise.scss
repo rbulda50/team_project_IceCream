@@ -121,11 +121,14 @@
             text-align: center;
             cursor: pointer;
         
-        color: #131313;
+            color: #131313;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         &__button-send:hover,
         &__button-send:focus {
+            color: #ffffff;
             background-color: $green-bt-cl;
         }
     }
@@ -151,13 +154,19 @@
             background: rgba(248, 210, 78, 0.1);
             border: 1px solid #84A178;
             border-radius: 10px;
+            outline: none;
             
             &:last-child {
                 margin-bottom: 32px;
             }
-          }
-    
-          &__input::placeholder {
+        }
+        &__input:valid:not(:placeholder-shown) {
+        border-color: #84A178;
+        }
+        &__input:invalid:not(:placeholder-shown) {
+        border-color: #ff0000;
+        }
+        &__input::placeholder {
             font-family: $main-font;
             font-style: normal;
             font-weight: 400;

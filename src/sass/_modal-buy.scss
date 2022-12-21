@@ -93,8 +93,11 @@ pointer-events: none;
         display: block;
         align-items: center;
         text-align: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         color: #131313;
+        cursor: pointer;
 
         &:hover,
         &:focus {
@@ -140,7 +143,9 @@ pointer-events: none;
         height: 100%;
     
     // ANIMATION FOR IMG
-        @include transitionRules (transform);
+        transform: scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         .ice-cream-types__item:hover &,
         .ice-cream-types__item:focus & {
@@ -179,10 +184,6 @@ pointer-events: none;
         background-color: #D6936D;
     }
 
-
-    
-    
-
     .ice-cream-types {
         position: relative;
         display: flex;
@@ -197,7 +198,7 @@ pointer-events: none;
         }
 
     }
-       
+
     .ice-cream-types__item {
         position: relative;
         display: flex;
@@ -213,7 +214,7 @@ pointer-events: none;
             margin-bottom: 100px;
             }
 
- }
+}
 
 .ice-cream-types__item:first-child:hover  .ice-cream__round--first,
 .ice-cream-types__item:first-child:focus  .ice-cream__round--first{
@@ -229,8 +230,8 @@ pointer-events: none;
 .ice-cream-types__item:nth-child(3n):focus  .ice-cream__round--third {
     background-color: #D6936D;
 }
-      
-      .ice-cream__round {
+    
+    .ice-cream__round {
         display: flex;
         justify-content: center;
         align-items:flex-end;
@@ -245,16 +246,19 @@ pointer-events: none;
 .ice-cream__round--first {
     border: 2px solid #96AF8C;
     box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ice-cream__round--second {
     border: 2px solid #EFD478;
     box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ice-cream__round--third {
     border: 2px solid #D6936D;
     box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ice-cream__text {
@@ -292,15 +296,15 @@ pointer-events: none;
 
     max-width: 368px;
 
-  
+
     &__input {
         padding: 11px 8px;
         height: 32px;
-      
+    
         font-size: 12px;
         line-height: 1.4;
         margin-bottom: 12px;
-      
+    
         background-color: rgba(248, 210, 78, 0.1);
         border-width: 1px;
         border-style: solid;
@@ -308,38 +312,32 @@ pointer-events: none;
         background: rgba(248, 210, 78, 0.1);
         border: 1px solid #84A178;
         border-radius: 10px;
+        outline: none;
         
         &:last-child {
             margin-bottom: 0;
         }
-      }
+    }
 
-      &__input::placeholder {
+    &__input::placeholder {
         font-family: $main-font;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.4;   
         color: #131313;
-      }
+    }
 
-      &__input--multiline {
+    &__input--multiline {
     
         height: 64px;
         resize: none;
         margin-bottom: 32px;
-      
-      }
-   
-  }
-  
-  
-
-  
-  
-  
-  
-
-
-
-  
+    }
+    &__input:valid:not(:placeholder-shown) {
+        border-color: #84A178;
+    }
+    &__input:invalid:not(:placeholder-shown) {
+        border-color: #ff0000;
+    }
+}
