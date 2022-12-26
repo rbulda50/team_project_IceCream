@@ -10,15 +10,13 @@
 .customer-reviews {
     .slider {
         text-align: center;
-    }
-}
-.slider {
-    .slick-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+        .slick-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 .slick-dots {
